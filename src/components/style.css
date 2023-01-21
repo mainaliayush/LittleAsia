@@ -1,0 +1,152 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.card_style {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.smalltrash {
+  display: none;
+}
+
+.card_style:hover {
+  box-shadow: 0 0 5px 2px rgba(60, 59, 59, 0.399);
+}
+
+.iteamsdetails {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
+}
+.items_img {
+  flex: 0.4;
+  /* margin: auto; */
+  margin-top:10px;
+  margin-left:10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.items_img img {
+  width: 20rem;
+  border-radius: 5px;
+}
+
+.details {
+  flex: 0.5;
+}
+
+.rating {
+  background-color: green;
+}
+
+@media (max-width: 772px) {
+  .iteamsdetails {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .homecardTop{
+    align-items: center;
+  }
+
+  .items_img img {
+    width: 22rem;
+    padding-top:15px;
+    padding-bottom:10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .smalltrash {
+    display: block;
+  }
+  .largetrash {
+    display: none;
+  }
+  .emptycart_img {
+    margin-right: 50px;
+  }
+  .smallclose {
+    display: none;
+  }
+
+  /* individual items details */
+
+  .items_img img {
+    width: 16rem;
+  }
+
+  .ml-auto:hover {
+    color: red;
+  }
+}
+
+.text-decoration-none:hover {
+  /* color: rgb(176, 176, 176) !important; */
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out 0.1s;
+}
+
+.divdiv {
+  opacity: 0.85;
+}
+
+.navbar{
+  /* padding-bottom: 0; */
+  margin-bottom: 0;
+}
+
+.toggle{
+  background-color: rgb(255, 248, 248) !important;
+}
+.bgimage{
+  height:100vh;
+  max-width:100%;
+  background-size: cover;
+  background-position:  center;
+}
+
+.homecard {
+  top: 5%;
+  left: -10%;
+  margin-left: auto;
+  margin-right: 10;
+  background-color: #000;
+  opacity:0.85;
+  border-color: azure;
+}
+
+.imagecard{
+  border-color: azure;
+}
+
+.homecardTop {
+  top: 5%;
+  height: 50%;
+  width:60%;
+  margin-right: 10px;
+  background-color: #000;
+  margin-left:20px;
+  margin-bottom:10px;
+  opacity:0.85;
+}
+
+.links{
+  text-decoration: none;
+  color: rgb(233, 209, 24);
+  font-weight: 700;
+  /* padding-top: -100px; */
+}
+.links:hover{
+
+  color: rgb(78, 191, 26);
+}
